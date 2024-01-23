@@ -24,6 +24,7 @@ void    render_set(fractCfg *cfg)
         ft_julia(cfg);
     mlx_put_image_to_window(cfg->mlx_ptr, cfg->win_ptr, cfg->img, 0, 0);
 }
+
 void    draw_pixel(fractCfg *cfg, int x, int y, int color)
 {
     char *dst;
