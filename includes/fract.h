@@ -60,4 +60,23 @@ typedef struct fractconfig
 	int		color_num;
 }			fractCfg;
 
+void	ft_mandelbrot(fractCfg *cfg);
+int		mandelbrot(double a, double b);
+
+void	ft_julia(fractCfg *cfg);
+int		julia(double a, double b, fractCfg *cfg);
+
+void	render_set(fractCfg *cfg);
+void	draw_pixel(fractCfg *cfg, int x, int y, int color);
+
+int		ft_trgb(int t, int r, int g, int b);
+int		ft_close(fractCfg *cfg);
+int		ft_strcmp(const char *s1, const char *s2);
+double	magnitude(double a, double b);
+
+int		mouse_handler(int x, int y, fractCfg *cfg);
+int		zoom_handler(int button, int x, int y, fractCfg *cfg);
+
+int		key_handler(int keycode, void *param);
+
 #endif
