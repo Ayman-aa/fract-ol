@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/23 19:09:02 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/24 18:32:44 by aaamam           ###   ########.fr       */
+/*   Created: 2024/01/19 09:36:55 by hbenazza          #+#    #+#             */
+/*   Updated: 2024/01/24 19:16:47 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/fract.h"
+#include "fractol.h"
 
-double	magnitude(double a, double b)
+int	main(int c, char **v)
 {
-	return (sqrt(a * a + b * b));
-}
+	t_data	data;
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	int	i;
-
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
-}
-	
-int	ft_trgb(int t, int r, int g, int b)
-{
-	return (t << 24 | r << 16 | g << 8 | b);
+	if (c < 2 || c > 4)
+		handler();
+	if (!(check_par(v, c)))
+		exit(0);
+	fract(&data, v);
+	if (v[1][0] == '2')
+		ft_render(v, &data);
+	else if (v[1][0] == '1')
+		ft_render(v, &data);
+	mlx_loop(data.mlx);
+	return (0);
 }
