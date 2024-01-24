@@ -6,7 +6,7 @@
 #    By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/12 14:34:35 by hbenazza          #+#    #+#              #
-#    Updated: 2024/01/24 19:50:27 by aaamam           ###   ########.fr        #
+#    Updated: 2024/01/24 20:02:31 by aaamam           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,8 @@ B_C = render_bonus.c events_bonus.c tools_bonus.c init_bonus.c burning_ship.c ma
 
 HEADER = fractol.h
 
-%.o : %.c
-	cc -c -o $@ $<
+.c.o:
+	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}: ${SRC} ${HEADER}
 		@${CC} ${SRC} ${CFLAGS} -o ${NAME} $(MLX)
