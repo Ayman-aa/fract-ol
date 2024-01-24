@@ -6,11 +6,11 @@
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 19:26:13 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/23 19:39:53 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:31:53 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 void    render_set(fractCfg *cfg)
 {

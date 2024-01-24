@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   key_event_hook.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaamam <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 23:08:23 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/23 23:08:23 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:32:37 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 int ft_close(fractCfg *cfg)
 {

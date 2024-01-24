@@ -6,11 +6,11 @@
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 19:09:05 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/23 19:25:00 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:31:21 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 void parsing(fractCfg *cfg, int ac, char **av)
 {

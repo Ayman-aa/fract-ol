@@ -6,11 +6,11 @@
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 19:09:02 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/23 19:13:27 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:32:44 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 double	magnitude(double a, double b)
 {

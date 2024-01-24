@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   julia.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaamam <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 16:51:52 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/24 16:51:52 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:35:35 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 int julia(double a, double b, fractCfg *cfg)
 {
@@ -23,7 +23,7 @@ int julia(double a, double b, fractCfg *cfg)
     r = a;
     i = b;
 
-    while (n < ITERATION && mag(r, i) <= 2.0)
+    while (n < ITERATION && magnitude(r, i) <= 2.0)
     {
         t = r;
         r = r * r - i * i + cfg->julia_x;

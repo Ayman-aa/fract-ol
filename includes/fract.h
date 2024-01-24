@@ -6,7 +6,7 @@
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 19:09:08 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/23 19:21:49 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:36:08 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <math.h>
 # include <mlx.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 # define WIDTH 800
 # define HEIGHT 800
@@ -71,7 +72,7 @@ void	draw_pixel(fractCfg *cfg, int x, int y, int color);
 
 int		ft_trgb(int t, int r, int g, int b);
 int		ft_close(fractCfg *cfg);
-int		ft_strcmp(const char *s1, const char *s2);
+int		ft_strcmp(char *s1, char *s2);
 double	magnitude(double a, double b);
 
 int		mouse_handler(int x, int y, fractCfg *cfg);

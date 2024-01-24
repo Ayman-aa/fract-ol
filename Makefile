@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aaamam <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 18:21:58 by aaamam            #+#    #+#              #
-#    Updated: 2024/01/24 18:21:58 by aaamam           ###   ########.fr        #
+#    Updated: 2024/01/24 18:36:34 by aaamam           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = src/main.c src/render.c src/mandelbrot src/julia.c src/utils.c \
-		src/key_event_hook.c src/utils.c
+SRC = src/main.c src/render.c src/mandelbrot.c src/julia.c src/utils.c \
+		src/key_event_hook.c
 CFLAGS = -Wall -Wextra -Werror
 CC = cc
 NAME = fractol

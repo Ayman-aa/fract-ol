@@ -6,11 +6,11 @@
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 19:29:07 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/23 19:39:45 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:33:07 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 int mandelbrot(double a, double b)
 {
@@ -23,7 +23,7 @@ int mandelbrot(double a, double b)
     i = 0;
     r = 0;
 
-    while (n < ITERATION && mag(r, i) <= 2.0)
+    while (n < ITERATION && magnitude(r, i) <= 2.0)
     {
         t = r;
         r = r * r - i * i + a;

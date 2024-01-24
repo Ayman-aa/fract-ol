@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   color_ctl.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaamam <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 00:04:52 by aaamam            #+#    #+#             */
-/*   Updated: 2024/01/24 00:04:52 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:33:43 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fract.h"
+#include "../includes/fract.h"
 
 int color_comb1(double i)
 {
@@ -31,7 +31,7 @@ int color_comb2(double i)
     double	ratio;
 
     clr = 0;
-    ratio = i / ITER;
+    ratio = i / ITERATION;
     clr = (unsigned char)(9 * (1 - ratio) * pow(ratio, 3) * 255);
     clr = (clr << 8) | (unsigned char)(15 * pow((1 - ratio), 2) * 255);
     clr = (clr << 8) | (unsigned char)(8.5 * pow((1 - ratio), 3) * ratio * 255);
