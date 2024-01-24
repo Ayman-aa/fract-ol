@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hbenazza <hbenazza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 16:21:43 by hbenazza          #+#    #+#             */
-/*   Updated: 2024/01/24 19:17:09 by aaamam           ###   ########.fr       */
+/*   Updated: 2024/01/23 20:48:06 by hbenazza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <mlx.h>
 # include <math.h>
 # include <unistd.h>
+# include <X11/keysym.h>
 # include <stdlib.h>
 # include <stdio.h>
 

@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/01/24 19:16:39 by aaamam            #+#    #+#              #
-#    Updated: 2024/01/24 19:16:40 by aaamam           ###   ########.fr        #
+#    Created: 2024/01/12 14:34:35 by hbenazza          #+#    #+#              #
+#    Updated: 2024/01/24 19:40:47 by aaamam           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC = mandelbrot.c render.c events.c main.c tools.c julia.c initial.c parcing.c
 
 MLX =  -Lminilibx-linux -lmlx_Linux -lX11 -lXext -lm
 
-CFLAGS = -Wall -Werror -Wextra -O3
+CFLAGS = -Wall -Werror -Wextra
 
 CC = cc
 
@@ -27,10 +27,10 @@ B_C = render_bonus.c events_bonus.c tools_bonus.c init_bonus.c burning_ship.c ma
 HEADER = fractol.h
 
 %.o : %.c
-	cc -c -O3 -o $@ $<
+	cc -c -o $@ $<
 
 ${NAME}: ${SRC} ${HEADER}
-		@${CC} ${SRC} ${CFLAGS} -O3 -o ${NAME} $(MLX)
+		@${CC} ${SRC} ${CFLAGS} -o ${NAME} $(MLX)
 		@echo "Your FrAcToL is reaDy"
 
 ${NAME_BONUS}: ${B_C} ${HEADER}
