@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaamam <aaamam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/12 16:21:43 by hbenazza          #+#    #+#             */
-/*   Updated: 2024/01/24 19:49:46 by aaamam           ###   ########.fr       */
+/*   Created: 2024/01/12 16:21:43 by aaamam            #+#    #+#             */
+/*   Updated: 2024/01/25 14:51:46 by aaamam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 # include <stdlib.h>
 # include <stdio.h>
 
-# define WIDTH 1000
-# define HEIGHT 1000
+# define WIDTH 800
+# define HEIGHT 800
 
 typedef struct s_data
 {
@@ -58,9 +58,7 @@ double			scale(double n, double min, double max, double old_max);
 void			put_pixel(t_data *data, int x, int y, unsigned int color);
 unsigned int	argb(unsigned int a, unsigned int r, unsigned int g,
 					unsigned int b);
-void			render_img(t_data *data);
 int				ft_close(t_data *data);
-int				esc(int key, t_data *data);
 void			mandelbrot(t_data *data);
 int				mandelbrot_eq(int x, int y, t_data *data);
 int				isnum(char *str);
